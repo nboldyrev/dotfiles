@@ -1,0 +1,333 @@
+[{
+    "layer": "top",
+    "position": "top",
+    "spacing": 0,
+    "height": 37,
+    "output": "HDMI-A-1",
+    "modules-left": [
+        "hyprland/workspaces",
+//	"custom/nemo",
+//	"custom/firefox",
+//	"custom/telegram",
+	"custom/discord"
+//	"custom/mathematica",
+//	"custom/texstudio"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "tray",
+        "memory",
+        "network",
+        "pulseaudio",
+        "battery",
+	"hyprland/language",
+        "custom/power"
+    ],
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "on-click-right": "fullscreen",
+        "icon-theme": "WhiteSur",
+        "icon-size": 25,
+        "tooltip-format": "{title}"
+    },
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "format": "{icon}",
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "active": "",
+            "urgent": ""
+        },
+        "persistent_workspaces": {
+            "6": [],
+            "7": [],
+            "8": [],
+            "9": [],
+            "10": []
+        }
+    },
+    "memory": {
+        "interval": 5,
+        "format": " {}%",
+        "max-length": 10
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "clock": {
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "format-alt": "  {:%a, %d %b %Y}",
+        "format": "  {:%I:%M %p}"
+
+    },
+    "hyprland/language": {
+              "format": "{}",
+              "format-en": "US",
+              "format-ru": "RU",
+              "keyboard-name": "at-translated-set-2-keyboard",
+              "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
+      },
+    "network": {
+        "format-wifi" : "{icon}",
+        "format-icons": [""],
+        "format-disconnected" : "",
+	"tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+	"tooltip-format-disconnected": "Disconnected",
+	//"on-click": "~/.config/rofi/wifi/wifi.sh &",
+        //"on-click-right": "~/.config/rofi/wifi/wifinew.sh &",
+	"interval": 5,
+	"nospacing": 1,
+    },
+    "pulseaudio": {
+        "format": "{icon}",
+        "format-bluetooth": "󰂰",
+        "nospacing": 1,
+        "tooltip-format": "Volume : {volume}%",
+        "format-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "default": ["","",""]
+        },
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "scroll-step": 1
+    },
+    "custom/firefox": {
+        "format": "",
+        "tooltip": false,
+	"on-click":"firefox"
+    },
+    "custom/telegram": {
+        "format": "",
+        "tooltip": false,
+	"on-click":"telegram-desktop"
+    },
+    "custom/mathematica": {
+        "format": "",
+        "tooltip": false,
+	"on-click":"/usr/local/Wolfram/Mathematica/13.3/Executables/Mathematica"
+    },
+    "custom/discord": {
+        "format": "",
+        "tooltip": false,
+	"on-click":"discord --enable-features=UseOzonePlatform --ozone-platform=wayland "
+    },
+    "custom/texstudio": {
+        "format": "",
+        "tooltip": false,
+	"on-click":"texstudio"
+    },
+    "custom/nemo": {
+        "format": "",
+        "tooltip": false,
+	"on-click":"nemo"
+    },
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": {
+            "charging": [
+                "",
+		"",
+		"",
+		"",
+		""
+            ],
+            "default": [
+                "",
+		"",
+		"",
+		"",
+		""
+                            ]
+        },
+        "format-full": "Charged ",
+        "interval": 5,
+        "states": {
+            "warning": 20,
+            "critical": 10
+        },
+        "tooltip": false
+    },
+"custom/power": {
+        "format": "",
+	"on-click":"wlogout"
+}
+},
+
+
+
+
+{"layer": "top",
+    "position": "top",
+    "spacing": 0,
+    "height": 37,
+    "output": "eDP-1",
+    "modules-left": [
+        "hyprland/workspaces",
+//	"custom/nemo",
+//	"custom/firefox",
+//	"custom/telegram",
+	"custom/discord"
+//	"custom/mathematica",
+//	"custom/texstudio"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "tray",
+        "memory",
+        "network",
+        "pulseaudio",
+        "battery",
+	"hyprland/language",
+        "custom/power"
+    ],
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "on-click-right": "fullscreen",
+        "icon-theme": "WhiteSur",
+        "icon-size": 25,
+        "tooltip-format": "{title}"
+    },
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "format": "{icon}",
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "active": "",
+            "urgent": ""
+        },
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        }
+    },
+    "memory": {
+        "interval": 5,
+        "format": " {}%",
+        "max-length": 10
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "clock": {
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "format-alt": "  {:%a, %d %b %Y}",
+        "format": "  {:%I:%M %p}"
+
+    },
+    "hyprland/language": {
+              "format": "{}",
+              "format-en": "US",
+              "format-ru": "RU",
+              "keyboard-name": "at-translated-set-2-keyboard",
+              "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
+      },
+    "network": {
+        "format-wifi" : "{icon}",
+        "format-icons": [""],
+        "format-disconnected" : "",
+	"tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+	"tooltip-format-disconnected": "Disconnected",
+	//"on-click": "~/.config/rofi/wifi/wifi.sh &",
+        //"on-click-right": "~/.config/rofi/wifi/wifinew.sh &",
+	"interval": 5,
+	"nospacing": 1,
+    },
+    "pulseaudio": {
+        "format": "{icon}",
+        "format-bluetooth": "󰂰",
+        "nospacing": 1,
+        "tooltip-format": "Volume : {volume}%",
+        "format-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "default": ["","",""]
+        },
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "scroll-step": 1
+    },
+    "custom/firefox": {
+        "format": "",
+        "tooltip": false,
+	"on-click":"firefox"
+    },
+    "custom/telegram": {
+        "format": "",
+        "tooltip": false,
+	"on-click":"telegram-desktop"
+    },
+    "custom/mathematica": {
+        "format": "",
+        "tooltip": false,
+	"on-click":"/usr/local/Wolfram/Mathematica/13.3/Executables/Mathematica"
+    },
+    "custom/discord": {
+        "format": "",
+        "tooltip": false,
+	"on-click":"discord --enable-features=UseOzonePlatform --ozone-platform=wayland "
+    },
+    "custom/texstudio": {
+        "format": "",
+        "tooltip": false,
+	"on-click":"texstudio"
+    },
+    "custom/nemo": {
+        "format": "",
+        "tooltip": false,
+	"on-click":"nemo"
+    },
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": {
+            "charging": [
+                "",
+		"",
+		"",
+		"",
+		""
+            ],
+            "default": [
+                "",
+		"",
+		"",
+		"",
+		""
+                            ]
+        },
+        "format-full": "Charged ",
+        "interval": 5,
+        "states": {
+            "warning": 20,
+            "critical": 10
+        },
+        "tooltip": false
+    },
+"custom/power": {
+        "format": "",
+	"on-click":"wlogout"
+}
+}]

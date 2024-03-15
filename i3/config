@@ -1,0 +1,37 @@
+include ./theme.conf
+include ./rules.conf
+include ./sound.conf
+include ./workspaces.conf
+#include ./bar.conf
+include ./brightness.conf
+include ./window_manage.conf
+exec_always --no-startup-id killall polybar
+exec_always --no-startup-id ~/.config/i3/autostart.sh
+
+#set the mod key. Mod4 - win. Mod1 - alt
+set $mod Mod4
+
+#Font
+font pango:monospace 15
+
+# start a terminal
+bindsym $mod+Return exec alacritty
+
+# kill focused window
+bindsym $mod+u kill
+
+# rofi usage
+bindsym $mod+d exec --no-startup-id rofi -show drun
+bindsym $mod+Tab exec --no-startup-id rofi -show window
+
+#Screenshot
+bindsym Print exec --no-startup-id  gnome-screenshot -i 
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec i3-msg exit
+
+bindsym Control+Mod1+l exec "i3lock -i ~/Pictures/Wallpapers/krug.png"

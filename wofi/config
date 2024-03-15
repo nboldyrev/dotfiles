@@ -1,0 +1,6 @@
+allow_images=true
+width=25%
+height=45%
+hide_scroll=true
+prompt=Applications
+dynamic_lines=true

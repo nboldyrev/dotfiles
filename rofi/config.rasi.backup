@@ -1,0 +1,26 @@
+//@theme "/usr/share/rofi/themes/glue_pro_blue.rasi"
+//@theme "/usr/share/rofi/themes/purple.rasi"
+configuration{
+	modes: "drun";
+	display-drun: "Applicatoins";
+	drun-display-format: "{icon} {name}";
+	show-icons: true;
+	icon-theme: "Papirus";
+	kb-accept-entry: "Control+m,Return,KP_Enter";
+	kb-remove-to-eol: "Control+y";
+	kb-clear-line: "Control+W";
+	kb-row-down: "Control+j";
+	kb-row-up: "Control+k";
+
+
+}
+window {
+    height: 300px;
+    width: 450px;
+    border: 0px;
+    border-radius: 5px;
+    padding: 0px 0px 0px 0px;
+    fullscreen: false;
+}
+
+
